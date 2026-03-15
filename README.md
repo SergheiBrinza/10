@@ -60,7 +60,7 @@ Service with priority $p_h$ preempts service with priority $p_l$ iff $p_h > p_l$
 
 Preemption cost — evicting an LLM means losing the KV-cache:
 
-$$C_{\text{preempt}} = T_{\text{shutdown}} + T_{\text{vram\_free}} + T_{\text{startup}} + T_{\text{warmup}}$$
+$$C_{\text{preempt}} = T_{\text{shutdown}} + T_{\text{vram-free}} + T_{\text{startup}} + T_{\text{warmup}}$$
 
 For Ollama on RTX 3090: $\approx 2s + 3s + 8s + 15s = 28s$ of dead time where neither service produces output.
 
